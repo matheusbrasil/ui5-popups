@@ -1,0 +1,18 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<!--	<SelectDialog noDataText="Nenhum registro encontrado" confirm="onConfirm" search="onSearch" items="{plantas>/}">
+		<items>
+						<StandardListItem title="{plantas>id}" description="{plantas>nome}" />
+		</items>
+	</SelectDialog>-->
+	<Dialog>
+		<content>
+			<Select items="{plantas>/}">
+				<items>
+					<core:Item key="{plantas>id}" text="{plantas>nome}"/>
+				</items>
+			</Select>
+			<Slider/>
+			<RatingIndicator/>
+		</content>
+	</Dialog>
+</core:FragmentDefinition>

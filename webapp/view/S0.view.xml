@@ -1,0 +1,17 @@
+<mvc:View controllerName="ovly.popups.controller.S0" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page title="{i18n>title}">
+					<content>
+						<Button text="Sucesso" press="onSucesso"/>
+						<Button text="Erro" type="Reject" press="onErro"/>
+						<Button text="Confirmar" type="Accept" press="onConfirmar"/>
+						<Input showValueHelp="true" valueHelpRequest="onValueHelpRequest"/>
+						<Input showValueHelp="true" valueHelpRequest="onValueHelpRequestFragment"/>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
